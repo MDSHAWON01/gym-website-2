@@ -1,0 +1,42 @@
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    gap: 0.5rem;
+}
+
+.imgbb {
+    width: 20rem;
+    height: 25rem;
+}
+
+.gallery {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+@media screen and (max-width:1024px) {
+    .gallery-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .imgbb {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .gallery-container article {
+        border: 0;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
